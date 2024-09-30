@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="search-container">
+    <input placeholder="搜索用户" bindinput="onSearchInput" value="{{searchQuery}}" />
+    <button bindtap="searchUsers">搜索</button>
+  </view>
+
+  <view class="user-list">
+    <block wx:for="{{users}}" wx:key="_id">
+      <view class="user-item">
+        <text>{{item.username}}</text>
+        <button 
+          class="{{item.isFollowing ? 'following' : ''}}" 
+          bindtap="toggleFollow" 
+          data-id="{{item._id}}"
+        >
+          {{item.isFollowing ? '取消关注' : '关注'}}
+        </button>
+      </view>
+    </block>
+  </view>
+</view>

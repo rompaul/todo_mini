@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="calendar-container">
+    <calendar bind:dateChange="onDateChange" />
+  </view>
+  
+  <view class="todo-list">
+    <view class="todo-input">
+      <input placeholder="添加新的待办事项" bindinput="onInputTodo" value="{{newTodo}}" />
+      <button bindtap="addTodo">添加</button>
+    </view>
+    
+    <view class="todo-items">
+      <block wx:for="{{todos}}" wx:key="id">
+        <view class="todo-item {{item.completed ? 'completed' : ''}}">
+          <checkbox checked="{{item.completed}}" bindtap="toggleTodo" data-id="{{item.id}}" />
+          <text>{{item.content}}</text>
+          <button class="delete-btn" bindtap="deleteTodo" data-id="{{item.id}}">删除</button>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

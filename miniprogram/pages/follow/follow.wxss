@@ -1,0 +1,36 @@
+.container {
+  padding: 20rpx;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.search-container input {
+  flex: 1;
+  border: 1rpx solid #ccc;
+  padding: 10rpx;
+}
+
+.search-container button {
+  margin-left: 10rpx;
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+
+.user-item button {
+  font-size: 28rpx;
+  padding: 10rpx 20rpx;
+}
+
+.user-item button.following {
+  background-color: #e0e0e0;
+  color: #333;
+}

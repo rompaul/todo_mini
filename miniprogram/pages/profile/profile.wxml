@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="user-info">
+    <image class="avatar" src="{{userInfo.avatarUrl || '/images/default-avatar.png'}}" />
+    <text class="username">{{userInfo.username}}</text>
+  </view>
+
+  <view class="stats">
+    <view class="stat-item">
+      <text class="stat-value">{{todoCount}}</text>
+      <text class="stat-label">待办事项</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-value">{{followingCount}}</text>
+      <text class="stat-label">关注</text>
+    </view>
+  </view>
+
+  <button class="logout-btn" bindtap="handleLogout">退出登录</button>
+</view>

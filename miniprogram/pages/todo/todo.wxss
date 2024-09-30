@@ -1,0 +1,47 @@
+.container {
+  padding: 20rpx;
+}
+
+.calendar-container {
+  margin-bottom: 20rpx;
+}
+
+.todo-input {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.todo-input input {
+  flex: 1;
+  border: 1rpx solid #ccc;
+  padding: 10rpx;
+}
+
+.todo-input button {
+  margin-left: 10rpx;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.todo-item.completed text {
+  color: #4CAF50;
+  text-decoration: line-through;
+}
+
+.todo-item text {
+  flex: 1;
+  margin-left: 10rpx;
+}
+
+.delete-btn {
+  padding: 5rpx 10rpx;
+  font-size: 24rpx;
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
